@@ -16,5 +16,12 @@ namespace produtos {
                         + Quantity + " unidades, Total: $" +
                         ValorTotalEmEstoque().ToString("F2");
         }
+
+        public void AddProduct(int amount) {
+            Quantity += amount;
+        }
+        public void DeleteProduct(int delete) {
+            Quantity -= delete;
+        }
     }
 }
