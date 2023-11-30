@@ -5,7 +5,7 @@ namespace DadosProdutos {
     internal class Program {
         public static void Main(string[] args) {
             Produtos item = new Produtos();
-
+            //Comentario teste
             Console.WriteLine("Entre os dados do produto: ");
             Console.Write("Nome: ");
             item.Name = Console.ReadLine();
