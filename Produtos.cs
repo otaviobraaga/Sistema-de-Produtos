@@ -3,8 +3,14 @@ using System.Globalization;
 namespace produtos {
     class Produtos {
         public string Name;
-        public float Value;
+        public double Value;
         public int Quantity;
+
+        public Produtos(string nome, double preco, int quantidade) {
+            Name = nome;
+            Value = preco;
+            Quantity = quantidade;
+        }
 
         public double ValorTotalEmEstoque() {
             return Value * Quantity;
@@ -20,6 +26,7 @@ namespace produtos {
         public void AddProduct(int amount) {
             Quantity += amount;
         }
+
         public void DeleteProduct(int delete) {
             Quantity -= delete;
         }
